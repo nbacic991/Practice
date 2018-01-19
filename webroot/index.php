@@ -54,7 +54,7 @@
     <!--        --><?php //include "PHP practice/AbstractClassesAndMethods.php";?>
     <!--    </div>-->
     <div class="database">
-        <p>This query is showing actors from my test_project database.</p>
+        <p>This query is showing all of the actors from my test_project database.</p>
 		<?php include "PHP practice/DatabaseResults.php";?>
     </div>
 
