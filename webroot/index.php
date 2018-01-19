@@ -10,23 +10,23 @@
 <body>
 <h1 style="text-align: center;">PHP Practice</h1>
 <section>
-<!--    <div class="classes">-->
-<!--		--><?php //include "Classes.php"; ?>
-<!--    </div>-->
+    <div class="classes">
+		<?php include "PHP practice/Classes.php"; ?>
+    </div>
 <!--    <div class="chaining">-->
-<!--		--><?php //include "Chaining.php"; ?>
+<!--		--><?php //include "PHP practice/Chaining.php"; ?>
 <!--    </div>-->
 <!--    <div class="access-modifiers">-->
-<!--        --><?php //include "AccessModifiers.php";?>
+<!--        --><?php //include "PHP practice/AccessModifiers.php";?>
 <!--    </div>-->
 <!--    <div class="magic-methods_and_constants">-->
-<!--        --><?php //include "MagicMethodsAndConstants.php";?>
+<!--        --><?php //include "PHP practice/MagicMethodsAndConstants.php";?>
 <!--    </div>-->
 <!--    <div class="inheritance">-->
-<!--        --><?php //include "Inheritance.php" ?>
+<!--        --><?php //include "PHP practice/Inheritance.php" ?>
 <!--    </div>-->
     <div class="abstract_classes-and-methods">
-        <?php include "AbstractClassesAndMethods.php";?>
+        <?php include "PHP practice/AbstractClassesAndMethods.php";?>
     </div>
 
 </section>
