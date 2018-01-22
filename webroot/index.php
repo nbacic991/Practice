@@ -60,19 +60,18 @@
     <!--    <div class="date-and-time">-->
     <!--        --><?php //include "PHP practice/DateAndTime.php";?>
     <!--    </div>-->
-    <div class="upload-files">
-        <h1>File upload form</h1>
-        <?php include "PHP practice/UploadFiles.php"; ?>
-        <form action="upload-manager.php" method="post" enctype="multipart/form-data">
-            <h2>Upload File</h2>
-            <label for="fileSelect">
-                File Name: 
-            </label>
-            <input type="file" name="photo" id="fileSelect">
-            <input type="submit" name="Submit" value="Upload">
-            <p><strong>NOTE:</strong>Only .jpg .jpeg .gif .png formats supported to a max size of 5mb</p>
-        </form>
-    </div>
+    <!--    <div class="upload-files">-->
+    <!--        <h1>File upload form</h1>-->
+    <!--        <form action="upload-manager.php" method="post" enctype="multipart/form-data">-->
+    <!--            <h2>Upload File</h2>-->
+    <!--            <label for="fileSelect">-->
+    <!--                File Name: -->
+    <!--            </label>-->
+    <!--            <input type="file" name="photo" id="fileSelect">-->
+    <!--            <input type="submit" name="Submit" value="Upload">-->
+    <!--            <p><strong>NOTE:</strong>Only .jpg .jpeg .gif .png formats supported to a max size of 5mb</p>-->
+    <!--        </form>-->
+    <!--    </div>-->
 
 </section>
 
