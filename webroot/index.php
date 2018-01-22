@@ -53,9 +53,25 @@
     <!--    <div class="abstract_classes-and-methods">-->
     <!--        --><?php //include "PHP practice/AbstractClassesAndMethods.php";?>
     <!--    </div>-->
-    <div class="database">
-        <p>This query is showing actors from my test_project database.</p>
-		<?php include "PHP practice/DatabaseResults.php";?>
+    <!--    <div class="database">-->
+    <!--        <p>This query is showing actors from my test_project database.</p>-->
+    <!--		--><?php //include "PHP practice/DatabaseResults.php";?>
+    <!--    </div>-->
+    <!--    <div class="date-and-time">-->
+    <!--        --><?php //include "PHP practice/DateAndTime.php";?>
+    <!--    </div>-->
+    <div class="upload-files">
+        <h1>File upload form</h1>
+        <?php include "PHP practice/UploadFiles.php"; ?>
+        <form action="upload-manager.php" method="post" enctype="multipart/form-data">
+            <h2>Upload File</h2>
+            <label for="fileSelect">
+                File Name: 
+            </label>
+            <input type="file" name="photo" id="fileSelect">
+            <input type="submit" name="Submit" value="Upload">
+            <p><strong>NOTE:</strong>Only .jpg .jpeg .gif .png formats supported to a max size of 5mb</p>
+        </form>
     </div>
 
 </section>
