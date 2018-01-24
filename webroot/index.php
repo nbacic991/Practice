@@ -72,64 +72,42 @@
     <!--            <p><strong>NOTE:</strong>Only .jpg .jpeg .gif .png formats supported to a max size of 5mb</p>-->
     <!--        </form>-->
     <!--    </div>-->
-    <div>
-        <h2>Test baze</h2>
-        <!--        /**-->
-        <!--        * Executing queries-->
-        <!--        */-->
-        <!---->
-        <!--        /**-->
-        <!--        * Deleting Actor with ActorID = 1 <- Ben Stiller-->
-        <!--        */-->
-        <!--        //$query = "DELETE FROM actors WHERE ActorID = 1";-->
-        <!---->
-        <!--        /**-->
-        <!--        * Updating Actor's last name WHERE ActorID = 2 <- Owen Bacic-->
-        <!--        */-->
-        <!--        //$query = "UPDATE actors SET last_name = 'Bacic' WHERE ActorID = 2";-->
-        <!---->
-        <!--        /**-->
-        <!--        * Inserting INTO actors table-->
-        <!--        * Kind of joke. :)-->
-        <!--        */-->
-        <!--        //$query = "INSERT INTO actors (first_name, last_name) VALUES ('Nemanja','Bacic'),('Timea','Sogor')";-->
-        <!---->
-        <!---->
-        <!--        /**-->
-        <!--        * Inserting new Actor in actors table-->
-        <!--        * And printing his ActorID-->
-        <!--        */-->
-        <!---->
-        <!--        $query = "INSERT INTO actors (first_name, last_name) VALUES ('Jing', 'Jang')";-->
-        <!---->
-        <!--        /**-->
-        <!--        * Pinting new actors id-->
-        <!--        */-->
-        <!---->
-        <!--        //echo "Newly created actor ID: ".$connection->insert_id;-->
+    <!--  <div>
+		 <!--        <h2>Test baze</h2>-->
 
-        <!-- Selecting Data from database -->
+    <!-- Selecting Data from database -->
+    <!--		--><?php
 
-		<?php
-
-		$query = "SELECT first_name, last_name FROM actors ORDER BY first_name";
-		$resultObj = $connection->query($query);
-
-		if($resultObj->num_rows > 0){
-			while ($singleRowFromQuery = $resultObj->fetch_assoc()) {
-                //print_r($singleRowFromQuery);
-				echo "<p><strong>Actor:</strong> ".$singleRowFromQuery['first_name'].'</p>';
-			}
-		}
-
-		$resultObj->close();
-		/**
-		 * Executing query;
-		 */
-		$connection->query($query);
-		$connection->close();
-		?>
-    </div>
+	//
+	//		$query = "SELECT first_name, last_name FROM actors ORDER BY first_name";
+	//		$resultObj = $connection->query($query);
+	//
+	//		if($resultObj->num_rows > 0){
+	//			while ($singleRowFromQuery = $resultObj->fetch_assoc()) {
+	//                //print_r($singleRowFromQuery);
+	//				echo "<p><strong>Actor:</strong> ".$singleRowFromQuery['first_name'].'</p>';
+	//			}
+	//		}
+	//
+	//		$resultObj->close();
+	//		/**
+	//		 * Executing query;
+	//		 */
+	//		$connection->query($query);
+	//		$connection->close();
+	//		?>
+    <!-- </div> -->
+    <!--    <div class="testing-oop">-->
+    <!--        --><?php
+	//            include "PHP practice/OOP/NewClass.php";
+	//
+	//            $object = new NewClass;
+	//            unset($object);
+	//            echo $object->getProperty();
+	//        ?>
+    <!---->
+    <!---->
+    <!--    </div>-->
 
 </section>
 
