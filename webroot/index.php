@@ -15,8 +15,7 @@
     h2,
     h3,
     h4,
-    h5,
-    p {
+    h5 {
         text-align: center;
     }
 
@@ -74,7 +73,7 @@
     <!--        </form>-->
     <!--    </div>-->
     <div>
-        <p>Test baze</p>
+        <h2>Test baze</h2>
         <!--        /**-->
         <!--        * Executing queries-->
         <!--        */-->
@@ -119,7 +118,7 @@
 		if($resultObj->num_rows > 0){
 			while ($singleRowFromQuery = $resultObj->fetch_assoc()) {
                 //print_r($singleRowFromQuery);
-				echo "Actor: ".$singleRowFromQuery['first_name'].'<br />';
+				echo "<p><strong>Actor:</strong> ".$singleRowFromQuery['first_name'].'</p>';
 			}
 		}
 
