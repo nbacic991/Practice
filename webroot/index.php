@@ -32,6 +32,7 @@
 
 </style>
 <body>
+<?php require "PHP practice/DatabaseConnection.php"?>
 
 <h1 style="text-align: center;">PHP Practice</h1>
 <section>
@@ -72,6 +73,64 @@
     <!--            <p><strong>NOTE:</strong>Only .jpg .jpeg .gif .png formats supported to a max size of 5mb</p>-->
     <!--        </form>-->
     <!--    </div>-->
+    <div>
+        <p>Test baze</p>
+        <!--        /**-->
+        <!--        * Executing queries-->
+        <!--        */-->
+        <!---->
+        <!--        /**-->
+        <!--        * Deleting Actor with ActorID = 1 <- Ben Stiller-->
+        <!--        */-->
+        <!--        //$query = "DELETE FROM actors WHERE ActorID = 1";-->
+        <!---->
+        <!--        /**-->
+        <!--        * Updating Actor's last name WHERE ActorID = 2 <- Owen Bacic-->
+        <!--        */-->
+        <!--        //$query = "UPDATE actors SET last_name = 'Bacic' WHERE ActorID = 2";-->
+        <!---->
+        <!--        /**-->
+        <!--        * Inserting INTO actors table-->
+        <!--        * Kind of joke. :)-->
+        <!--        */-->
+        <!--        //$query = "INSERT INTO actors (first_name, last_name) VALUES ('Nemanja','Bacic'),('Timea','Sogor')";-->
+        <!---->
+        <!---->
+        <!--        /**-->
+        <!--        * Inserting new Actor in actors table-->
+        <!--        * And printing his ActorID-->
+        <!--        */-->
+        <!---->
+        <!--        $query = "INSERT INTO actors (first_name, last_name) VALUES ('Jing', 'Jang')";-->
+        <!---->
+        <!--        /**-->
+        <!--        * Pinting new actors id-->
+        <!--        */-->
+        <!---->
+        <!--        //echo "Newly created actor ID: ".$connection->insert_id;-->
+
+        <!-- Selecting Data from database -->
+
+		<?php
+
+		$query = "SELECT first_name, last_name FROM actors ORDER BY first_name";
+		$resultObj = $connection->query($query);
+
+		if($resultObj->num_rows > 0){
+			while ($singleRowFromQuery = $resultObj->fetch_assoc()) {
+                //print_r($singleRowFromQuery);
+				echo "Actor: ".$singleRowFromQuery['first_name'].'<br />';
+			}
+		}
+
+		$resultObj->close();
+		/**
+		 * Executing query;
+		 */
+		$connection->query($query);
+		$connection->close();
+		?>
+    </div>
 
 </section>
 

@@ -28,7 +28,9 @@ $servername = "mariadb";
 $username = "drupal";
 $password = "drupal";
 $dbname = "test_project";
-
+/**
+ * PDO Connection to test_project database
+ */
 try {
 	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
