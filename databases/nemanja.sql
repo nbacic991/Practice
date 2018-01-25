@@ -21,14 +21,16 @@
 ## Showing all actors from actors table
 # SELECT * FROM actors;
 
-## Joins
+## Adding new column to table
+# ALTER TABLE movies ADD COLUMN Director INT NULL;
 
-INSERT INTO actors (first_name, last_name) VALUES
-  ('Jennifer','Lawrence'),
-  ('Natalie','Portman'),
-  ('Scarlet','Johansson'),
-  ('Meryl','Streep'),
-  ('Cate','Blanchet'),
-  ('Charlize','Theron'),
-  ('Emma','Stone'),
-  ('Julia','Roberts');
+## Joins
+## Joining director table with ActorID table
+# SELECT * FROM movies ,actors WHERE movies.director = actors.ActorID;
+
+## When dealing with more than 1/2 tables, You must specify a table ex. actors.ActorID
+
+## Selecting title, release year, rating and actor first and last name from movies and actors table and displaying those first and last name as Director table:
+# SELECT movies.title, movies.release_year, movies.rating, CONCAT(actors.first_name,' ', actors.last_name) AS Director FROM movies, actors WHERE movies.Director = actors.ActorID;
+
+#FOR INNER JOIN ALL FIELDS MUST EXIST OR IT WON'T BE SHOWN !!
