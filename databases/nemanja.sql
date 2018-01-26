@@ -34,3 +34,10 @@
 # SELECT movies.title, movies.release_year, movies.rating, CONCAT(actors.first_name,' ', actors.last_name) AS Director FROM movies, actors WHERE movies.Director = actors.ActorID;
 
 #FOR INNER JOIN ALL FIELDS MUST EXIST OR IT WON'T BE SHOWN !!
+
+
+##Updating tables/columns
+## IF updating single column:
+# UPDATE table_name SET column_name = value WHERE column_name = value;
+## IF updating multiple columns:
+# UPDATE table_name SET column_name = value WHERE column_name IN ('value1','value2', ...);
