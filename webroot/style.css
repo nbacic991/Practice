@@ -10,23 +10,38 @@ section > div {
     margin: auto;
     width: 70%;
 }
-
-nav {
+nav ul {
+    margin: auto;
+    width: 50%;
+    display: block;
     text-align: center;
+}
+nav ul li {
+    display: inline-block;
+
 }
 ul {
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
-ul li {
-    display: inline-block;
+#our-list li {
     border: 1px solid gray;
+    list-style-type: none;
     padding: 10px;
 }
 ul li a {
+    padding: 10px;
+    display: block;
     text-decoration: none;
 
 }
 .database > table {
     width: 50%;
     margin: auto;
+}
+
+.active {
+    background-color: orangered;
+    color: #fff;
 }

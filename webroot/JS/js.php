@@ -53,7 +53,7 @@
 <!--		</div>-->
 		<div class="click-to--and-replace">
 			<h1 id="our-headline">Click on item to replace this text</h1>
-			<button>Add new item</button>
+			<button id="our-button">Add new item</button>
 			<ul id="our-list">
 				<li>First Item</li>
 				<li>Second Item</li>
