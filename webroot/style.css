@@ -45,3 +45,105 @@ ul li a {
     background-color: orangered;
     color: #fff;
 }
+
+/**
+ * Slider css
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.slide {
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.slider-wrapper > .slide:first-child {
+    opacity: 1;
+}
+
+.slider-nav {
+    height: 64px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -32px;
+    z-index: 1000;
+    display: none;
+}
+
+.slider-nav button {
+    outline: 0;
+    display: block;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    text-indent: -9999em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1px solid yellow;
+}
+
+.slider-nav button:focus {
+    outline-style: none;
+}
+
+.slider-nav button.slider-previous {
+    float: left;
+    content: '<';
+    color: yellow;
+    display: none;
+    margin-left: 1em;
+
+}
+
+.slider-nav button.slider-next {
+    float: right;
+    content: '>';
+    color: yellow;
+    margin-right: 1em;
+}
+
+.slider-pagination {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.slider-pagination a {
+    width: 2em;
+    height: 2em;
+    line-height: 2;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #000;
+    text-decoration: none;
+    background: #f5f5f5;
+    background: linear-gradient( #f5f5f5, #fff );
+    display: inline-block;
+    margin-right: 0.7em;
+}
+
+.slider-pagination a.current {
+    border-color: #000;
+    background: #fff;
+    background: linear-gradient( #fff, #f5f5f5 );
+}
