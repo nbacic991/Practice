@@ -88,12 +88,16 @@
                 <a href="#slide-8">•</a>
             </div>
         </div>
+        <div class="using-prompt">
+            <h1>Using prompt() method</h1>
+        </div>
 
     </div>
 </section>
 <script src="JS/jquery-3.3.1.min.js"></script>
-<script src="JS/script.js"></script>
-<script src="JS/slider.js"></script>
+<script src="JS/capture.js"></script>
+<!--<script src="JS/script.js"></script>-->
+<!--<script src="JS/slider.js"></script>-->
 
 </body>
 </html>
